@@ -10,14 +10,18 @@
 :root {
     --main-text-color : #212121 ;
     --accent-color : #2196F3 ;
-    --back-ground-color : #F5F5F5 ;
     --white-color : #FFFFFF;
     --auth-color : #757575;
+    --footer-contact-color :rgba(255, 255, 255, 0.6);
+    --black-color :#000000;
+    --hero-btn-hover-focus :#188CEB;
+    --third-back-color :#2F303A;
+    --secondary-back-color :#F5F4FA;
 }
 
 body {
     color: var(--main-text-color);
-    background-color: var(--back-ground-color);
+    background-color: var(--white-color);
 
     font-family: 'Roboto', sans-serif;
 }
@@ -26,18 +30,19 @@ ul {
     list-style: none;
 }
 
-/* header  */
-.header {
-    background: var(--white-color);
+a {
+    text-decoration: none;
 }
 
+/* header  */
+
 .logo {
-    color: #000000;
+    color: var(--black-color);
 
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.20;
     letter-spacing: 0.03em;
     text-decoration: none;
 }
@@ -61,7 +66,6 @@ ul {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    text-decoration: none;
 }
 
 .nav-link {
@@ -80,7 +84,7 @@ ul {
 /* стилі для героя */
 
 .hero {
-    background-color: #2F303A;
+    background-color: var(--third-back-color);
 }
 
 .hero-title {
@@ -98,17 +102,19 @@ ul {
     background: var(--accent-color);
     color: var(--white-color);
 
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;
-    display: flex;
-    align-items: center;
+    line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
 
     cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus  {
+    background-color: var(--hero-btn-hover-focus);
 }
 
 /* секці 1 */
@@ -125,14 +131,10 @@ ul {
      overflow: hidden;
  }
 
- .benefits-company {
-    background-color: var(--back-ground-color) ;
- }
-
  .benefits-title {
         font-weight: 700;
         font-size: 14px;
-        line-height: 1.14px;
+        line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
     
@@ -140,7 +142,6 @@ ul {
  }
 
 .benefits-text {
-        font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
@@ -148,10 +149,10 @@ ul {
         color: var(--auth-color);
 }
 
-/* дргуга секція */
+/* третя  секція  */
 
 .team {
-    background-color: #F5F4FA ;
+    background-color: var(--secondary-back-color);
 }
 
 .section-title {
@@ -164,6 +165,10 @@ ul {
         color: var(--main-text-color);
 }
 
+.workers {
+    background-color: var(--white-color);
+}
+
 .names {
         font-weight: 500;
         font-size: 16px;
@@ -174,7 +179,6 @@ ul {
 }
 
 .profession {
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.19;
         letter-spacing: 0.03em;
@@ -184,15 +188,13 @@ ul {
 /* footer */
 
 .footer {
-    background-color: #2F303A; ;
+    background-color: var(--third-back-color);
 }
 
  .footer .logo {
     color: var(--white-color);
 }
-.footer a {
-    text-decoration: none;
-}
+
 
 
 .footer address {
@@ -209,12 +211,11 @@ ul {
 }
 
 .contacts {
-        font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
     
-        color: rgba(255, 255, 255, 0.6);
+        color: var(--footer-contact-color);
 }
 
 .contacts:hover,
@@ -224,9 +225,6 @@ ul {
 
 /* page portfolio */
 
-.main-back {
-    background-color: var(--back-ground-color) ;
-}
 
 .btn {
         font-family: 'Roboto', sans-serif;
@@ -239,7 +237,7 @@ ul {
         cursor: pointer;
     
         color: var(--main-text-color);
-        background-color: #F5F4FA;
+        background-color: var(--secondary-back-color);
 }
 
 .btn:hover,
@@ -247,22 +245,18 @@ ul {
     background-color: var(--accent-color);
     color: var(--white-color);
 }
-.btn-list .current {
-    background-color: var(--accent-color);
-    color: var(--white-color);
-} 
 
-.projects h2 {
+
+.project-title {
         font-weight: 700;
         font-size: 18px;
-        line-height: 2.0;
+        line-height: 2.00;
         letter-spacing: 0.06em;
     
         color: var(--main-text-color);
 }
 
-.projects p {
-        font-weight: 400;
+.project-field {
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.03em;
